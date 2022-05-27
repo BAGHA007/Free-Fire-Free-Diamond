@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Free Fire Free Diamonds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Supherhero">
+    <meta name="keywords" content="programming hero,learn programming">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+   <b><span class="green">Snap</span><span class="red">Shop</span></b><img src="2099125.png" class="imgs">
+</head>
+<body>
+<img src="Garena-Free-Fire-redeems-code-for-14-March.jpg" class="pro">
+<h1>Free Fire Unlimited Free Diamonds</h1>
+<p>(Limited Time Only)</p>
+  <div class="containers">
+<h3>Enter Player Uid</h3>
+<input type="number" class="diamond" placeholder="Uid">
+ </div>
+<div class="container">
+<h2>Select Diamond</h2>
+<select name="language" class="custom-select" >
+ <p> <option value="html">25 Diamond</option>
+  <option value="css">50 Diamond</option></p>
+  <option value="javascript">100 Diamond</option>
+  <option value="python">310 Diamond</option>
+  <option value="sql">520 Diamond</option>
+  <option value="kotlin">1060 Diamond</option>
+</select>
+ </div>
+   
+  
+
+    </div>
+    <button type="button"><a href="fc.html">Login To Add Diamond In account</a>
+
+</div>
+
+
+
+
+
+<!--main js-->
+<script src="js/main.js"></script>
+</body>
+</html>
+<style>
+body{
+background-color: #F9F6EE;
+font-family: system-ui;
+}
+.container{
+background-color:#fff;
+margin-top:20px;
+margin-left:20px;
+width:350px;
+height:480px;
+padding-top:10px;
+border-radius:13px;
+}
+.containers{
+background-color:#fff;
+margin-top:20px;
+margin-left:20px;
+width:350px;
+height:150px;
+padding-top:10px;
+border-radius:13px;
+}
+
+.thank{
+margin-left:90px;
+font-size:32px;
+color:#36454F;
+font-family:sens-serif;
+}
+.next{
+margin-left:20px;
+font-family:sens-serif;
+}
+button {
+background-color: #32CD32;
+outline:none;
+width:200px;
+height:40px;
+margin-left:75px;
+border:none;
+outline:none;
+font-size:17px;
+margin-top:8px;
+border:1px solid #ccc;
+
+}
+a{
+text-decoration:none;
+color:#fff;
+}
+.diamond{
+width:290px;
+height:30px;
+margin-left:30px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+padding-left:10px;
+
+}
+h2{
+
+margin-left:80px;
+color:#CF9FFF;
+}
+h3{
+color:#BDB5D5;
+font-size:24px;
+
+margin-left:80px;
+}
+button {
+background-color: #50C878;
+outline:none;
+width:300px;
+height:40px;
+margin-left:45px;
+border:none;
+outline:none;
+font-size:17px;
+margin-top:20px;
+border-radius:5px;
+
+}
+h1{
+
+font-size:28px;
+    margin-bottom:21px;
+    color:#3f51b5;
+    margin-left:20px;
+}
+p{
+color:#C41E3A;
+margin-left:13px;
+}
+.fg{
+width:50px;
+height:52px;
+padding:3px;
+}
+.pro{
+width:350px;
+height:150px;
+margin-left:20px;
+border-radius:10px;
+margin-top:30px;
+
+}
+
+.imgs{
+width:25px;
+height:27px;
+margin-left:240px;
+
+}
+.green {
+color:#50C878;
+font-size:23px;
+font-family: system-ui;
+}
+
+.red{
+font-size:23px;
+font-family: system-ui;
+}
+
+
+
+select {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  width: 150px;
+  gap: 2px;
+}
+
+.select__item {
+  padding-top:16px;
+  
+  cursor: pointer;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  border-radius: 3px;
+  background: #eeeeee;
+  transition: background 0.2s;
+  margin-top:10px;
+  width:310px;
+  height:40px;
+  border-radius:12px;
+  margin-left:15px;
+}
+
+.select__item--selected {
+  background: #5D3FD3;
+  color: #fff;
+}
+</style>
+
+<script>
+
+class CustomSelect {
+  constructor(originalSelect) {
+    this.originalSelect = originalSelect;
+    this.customSelect = document.createElement("div");
+    this.customSelect.classList.add("select");
+
+    this.originalSelect.querySelectorAll("option").forEach((optionElement) => {
+      const itemElement = document.createElement("div");
+
+      itemElement.classList.add("select__item");
+      itemElement.textContent = optionElement.textContent;
+      this.customSelect.appendChild(itemElement);
+
+      if (optionElement.selected) {
+        this._select(itemElement);
+      }
+
+      itemElement.addEventListener("click", () => {
+        if (
+          this.originalSelect.multiple &&
+          itemElement.classList.contains("select__item--selected")
+        ) {
+          this._deselect(itemElement);
+        } else {
+          this._select(itemElement);
+        }
+      });
+    });
+
+    this.originalSelect.insertAdjacentElement("afterend", this.customSelect);
+    this.originalSelect.style.display = "none";
+  }
+
+  _select(itemElement) {
+    const index = Array.from(this.customSelect.children).indexOf(itemElement);
+    
+    
+    
+    
+    if (!this.originalSelect.multiple) {
+      this.customSelect.querySelectorAll(".select__item").forEach((el) => {
+        el.classList.remove("select__item--selected");
+      });
+    }
+
+    this.originalSelect.querySelectorAll("option")[index].selected = true;
+    itemElement.classList.add("select__item--selected");
+  }
+
+  _deselect(itemElement) {
+    const index = Array.from(this.customSelect.children).indexOf(itemElement);
+
+    this.originalSelect.querySelectorAll("option")[index].selected = false;
+    itemElement.classList.remove("select__item--selected");
+  }
+}
+
+document.querySelectorAll(".custom-select").forEach((selectElement) => {
+  new CustomSelect(selectElement);
+});
+
+</script>
